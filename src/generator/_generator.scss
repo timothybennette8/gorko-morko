@@ -1,8 +1,8 @@
-@import 'workers/cycle';
-@import 'workers/generate-css-vars';
-@import '../mixins/generate-utility-classes';
+@use "workers/cycle";
+@use "workers/generate-css-vars";
+@use "../mixins/generate-utility-classes";
 
-$css-vars: map-get($gorko-config, 'css-vars');
+$css-vars: map-get($gorko-config, "css-vars");
 
 /// Run the vars generator, regardless of whether they are defined,
 /// but only if they are enabled
